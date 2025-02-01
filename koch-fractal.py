@@ -7,19 +7,19 @@ screen = Screen()
 
 
 
-def koch(length, step):
-    if step == 0:
+def koch(length, depth):
+    if depth == 0:
         t.forward(length)
     else:
         length = length/3
-        step -= 1
-        koch(length, step)
+        depth -= 1
+        koch(length, depth)
         t.right(60)
-        koch(length, step)
+        koch(length, depth)
         t.left(120)
-        koch(length,step)
+        koch(length,depth)
         t.right(60)
-        koch(length,step)
+        koch(length, depth)
 
 t.penup()
 t.goto(-150,150)

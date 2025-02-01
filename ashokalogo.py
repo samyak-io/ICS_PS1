@@ -19,9 +19,9 @@ def draw_circle(x, y, radius):
 
 
 # Parameters for the imaginary circle that holds the 10 outer circles
-imaginary_circle_radius = 100  # Distance of the outer circles from center
-outer_circle_radius = 200  # Size of each outer circle
-num_outer_circles = 10  # Number of outer circles
+imaginary_circle_radius = 100  
+outer_circle_radius = 200  
+num_outer_circles = 10  
 
 def draw_ashoka_logo():
     turtle.color("red")
@@ -34,7 +34,7 @@ def draw_ashoka_logo():
 
         draw_circle(x, y, outer_circle_radius)
 
-    # 4 Central Circles (with different radii) centered at (0,0)
+    # Central Circles (with different radii) centred at (0,0)
     central_circle_radii = [145, 172.5, 206, 243, 271.5, 300]  # Varying sizes
 
     for radius in central_circle_radii:
@@ -56,6 +56,4 @@ def draw_ashoka_logo():
 
 draw_ashoka_logo()
 
-
-# Display the final result (no animation)
 turtle.done()
